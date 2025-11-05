@@ -1,0 +1,68 @@
+name: mindnest
+description: AI-powered emotional meditation app for sleep and anxiety relief
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI Components
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+
+  # State Management
+  provider: ^6.1.1
+
+  # HTTP and API
+  http: ^1.1.2
+  dio: ^5.4.0
+
+  # Local Storage
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.2
+
+  # Audio
+  audioplayers: ^5.2.1
+  just_audio: ^0.9.36
+
+  # Voice Recording
+  record: ^5.0.4
+  permission_handler: ^11.1.0
+
+  # Charts
+  fl_chart: ^0.65.0
+
+  # Animations
+  lottie: ^2.7.0
+
+  # Date/Time
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/audio/
+    - assets/images/
+    - assets/animations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
