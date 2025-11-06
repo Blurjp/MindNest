@@ -11,6 +11,31 @@ MindNest is an AI-powered meditation app designed specifically for **sleep and a
 
 ---
 
+## 🚀 Quick Start
+
+**Get started in 3 steps:**
+
+```bash
+# 1. Run setup (one time only)
+./setup.sh          # Linux/Mac
+# or
+setup.bat           # Windows
+
+# 2. Start backend
+./run-backend.sh    # Linux/Mac
+# or
+run-backend.bat     # Windows
+
+# 3. Start frontend (in another terminal)
+./run-frontend.sh   # Linux/Mac
+# or
+run-frontend.bat    # Windows
+```
+
+**📖 Full setup guide:** See [SETUP.md](SETUP.md) for detailed instructions.
+
+---
+
 ## ✨ Features
 
 ### 🎯 Core MVP Features
@@ -77,7 +102,7 @@ MindNest/
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Detailed Setup
 
 ### Prerequisites
 
@@ -85,7 +110,28 @@ MindNest/
 - **Frontend**: Flutter 3.0+, Dart 3.0+
 - **Optional**: OpenAI API key, ElevenLabs API key (for production)
 
-### 1. Start Backend
+### Automated Setup (Recommended)
+
+```bash
+# One-time setup
+./setup.sh          # Linux/Mac
+setup.bat           # Windows
+
+# Start backend (terminal 1)
+./run-backend.sh    # Linux/Mac
+run-backend.bat     # Windows
+
+# Start frontend (terminal 2)
+./run-frontend.sh   # Linux/Mac
+run-frontend.bat    # Windows
+```
+
+### Manual Setup (Alternative)
+
+<details>
+<summary>Click to expand manual setup steps</summary>
+
+#### 1. Start Backend
 
 ```bash
 # Navigate to backend
@@ -105,7 +151,7 @@ python app/main.py
 
 Visit http://localhost:8000/docs for Swagger UI.
 
-### 2. Start Frontend
+#### 2. Start Frontend
 
 ```bash
 # Navigate to frontend
@@ -121,6 +167,10 @@ flutter pub get
 # Run app
 flutter run
 ```
+
+</details>
+
+**For detailed troubleshooting and platform-specific instructions, see [SETUP.md](SETUP.md)**
 
 ---
 
